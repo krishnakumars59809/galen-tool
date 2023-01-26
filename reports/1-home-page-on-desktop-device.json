@@ -1,0 +1,152 @@
+{
+  "testId" : "1-home-page-on-desktop-device",
+  "name" : "Home page on desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Clear quantity on Select features ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: input[name='qty']",
+        "type" : "text"
+      } ],
+      "time" : 1674693861474,
+      "type" : "node"
+    }, {
+      "name" : "Type \"2\" to quantity on Select features ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: input[name='qty']",
+        "type" : "text"
+      } ],
+      "time" : 1674693861545,
+      "type" : "node"
+    }, {
+      "name" : "Click size on Select features ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: label[for='0f0-input']",
+        "type" : "text"
+      } ],
+      "time" : 1674693861628,
+      "type" : "node"
+    }, {
+      "name" : "Click closed on closed ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: a[id='closeButton']",
+        "type" : "text"
+      } ],
+      "time" : 1674693862874,
+      "type" : "node"
+    }, {
+      "name" : "Click closeCookies on closed ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: div[id='onetrust-close-btn-container']",
+        "type" : "text"
+      } ],
+      "time" : 1674693862934,
+      "type" : "node"
+    }, {
+      "name" : "Click addButton on Select features ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: button[id='addToBag']",
+        "type" : "text"
+      } ],
+      "time" : 1674693863084,
+      "type" : "node"
+    }, {
+      "name" : "Click checkout on Checkout ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: button[routerlink='/cart/cart']",
+        "type" : "text"
+      } ],
+      "time" : 1674693864507,
+      "type" : "node"
+    }, {
+      "name" : "Check layout: specs/home.gspec included tags: all,desktop",
+      "status" : "error",
+      "time" : 1674693865479,
+      "includedTags" : [ "all", "desktop" ],
+      "sections" : [ {
+        "name" : "Home",
+        "place" : {
+          "filePath" : "specs/home.gspec",
+          "lineNumber" : 9
+        },
+        "objects" : [ ],
+        "sections" : [ {
+          "name" : "logo",
+          "place" : {
+            "filePath" : "specs/home.gspec",
+            "lineNumber" : 10
+          },
+          "objects" : [ {
+            "name" : "proceed",
+            "specs" : [ {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/home.gspec",
+                "lineNumber" : 21
+              },
+              "name" : "width 316px",
+              "errors" : [ "\"proceed\" width is 219px instead of 316px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "proceed",
+                  "edge" : "left"
+                },
+                "to" : {
+                  "object" : "proceed",
+                  "edge" : "right"
+                },
+                "expectedDistance" : "316px",
+                "realDistance" : "219px"
+              } ],
+              "highlight" : [ "proceed" ]
+            }, {
+              "status" : "error",
+              "place" : {
+                "filePath" : "specs/home.gspec",
+                "lineNumber" : 22
+              },
+              "name" : "height 38px",
+              "errors" : [ "\"proceed\" height is 45px instead of 38px" ],
+              "meta" : [ {
+                "from" : {
+                  "object" : "proceed",
+                  "edge" : "top"
+                },
+                "to" : {
+                  "object" : "proceed",
+                  "edge" : "bottom"
+                },
+                "expectedDistance" : "38px",
+                "realDistance" : "45px"
+              } ],
+              "highlight" : [ "proceed" ]
+            } ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "proceed" : {
+          "area" : [ 760, 321, 219, 45 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Click proceed on ProceedCheckout ",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "css: button[name='Proceed to checkout']",
+        "type" : "text"
+      } ],
+      "time" : 1674693865508,
+      "type" : "node"
+    } ]
+  }
+}

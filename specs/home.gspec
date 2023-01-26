@@ -1,0 +1,22 @@
+@objects
+    size           mat-expansion-panel-header[id='mat-expansion-panel-header-1']
+    sizeXLT        input[id='XLT']
+    sort           div[id='mat-select-value-1']
+    selectSize     mat-checkbox[id='3f0']
+    selectItem     a[aria-label='Nautica Camo-Blocked Long-Sleeve Tee']
+    addButton      button[id='addToBag']
+    proceed        button[name='Proceed to checkout']
+= Home =
+  = logo =
+    @on mobile
+        proceed:
+            width 300px 
+            height 38px
+    @on tablet
+        proceed:
+            width 316px 
+            height 35px
+    @on desktop
+        proceed:
+            width 316px 
+            height 38px
