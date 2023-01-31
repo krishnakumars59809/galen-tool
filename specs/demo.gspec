@@ -1,0 +1,33 @@
+@objects
+    user-name        input[name='uname']
+    password         input[name='pass']
+    login-button     input[value='login']
+= LoginPage =
+    @on mobile
+        login-button:
+            width 75px
+            css font-size is "10px" 
+            css background-color is "red"
+            css color is "white"   
+            css font-family starts "Helvetica" 
+            css font-family ends "sans-serif" 
+            css font-family contains "italic"             
+    @on tablet
+        login-button:
+            width 75px
+            css font-size is "10px" 
+            css background-color is "red"
+            css color is "white"
+            css font-family starts "Helvetica" 
+            css font-family ends "sans-serif" 
+            css font-family contains "italic"             
+    @on desktop
+        login-button:
+            width 75px
+            css font-size is "10px" 
+            css background-color is "red"
+            css color is "white"
+            css font-family starts "Helvetica" 
+            css font-family ends "sans-serif" 
+            css font-family contains "italic" 
+    

@@ -1,0 +1,15 @@
+{
+  "name": "galen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests/demo.test.js"
+  },
+  "scripts": {
+    "test": "galen test tests --htmlreport reports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
